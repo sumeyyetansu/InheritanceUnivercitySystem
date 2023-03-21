@@ -14,7 +14,12 @@ public class SecurityGuard extends Officer {
         this.document = document;
     }
     public void watch(){
-        System.out.println(getName() + " is watching around");
+        System.out.println(getName() + " etrafı izliyor.");
 
+    }
+
+    @Override
+    public void work() {
+        System.out.println(this.getName() + " güvenlik kulübesinde çalışmaya başladı.");
     }
 }

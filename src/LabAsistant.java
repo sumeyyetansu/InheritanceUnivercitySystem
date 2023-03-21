@@ -3,11 +3,11 @@ public class LabAsistant extends Assistant{
         super(name, telNumber, email, departmant, title, officeTime);
     }
     public void attendClass(){
-        System.out.println(getName() + " attand class");
+        System.out.println(getName() + " derse malzemelerei getirdi.");
 
     }
     public void enterTheLab(){
-        System.out.println(getName() + " is gooing to enter the lab");
+        System.out.println(getName() + " laboratuara girdi");
 
     }
 }

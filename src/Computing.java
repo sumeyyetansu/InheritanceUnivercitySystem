@@ -14,7 +14,12 @@ public class Computing extends Officer{
         this.task = task;
     }
     public void networkSetup(){
-        System.out.println(getName() + " doing network setup");
+        System.out.println(getName() + " network kurdu");
 
+    }
+
+    @Override
+    public void work() {
+        System.out.println(this.getName() + " bilgisayarda çalışmaya başladı");
     }
 }

@@ -1,4 +1,4 @@
-public class Officer extends Worker {
+public abstract class Officer extends Worker {
     private String departmant;
     private String shift;
     public Officer(String name, int telNumber, String email, String departmant, String shift) {
@@ -22,8 +22,15 @@ public class Officer extends Worker {
     public void setShift(String shift) {
         this.shift = shift;
     }
-    public void work(){
-        System.out.println(getName() + " is working");
+    public abstract void work();
 
+    @Override
+    public void entry() {
+        System.out.println(this.getName() + " B kapsıından giriş yaptı");
+    }
+
+    @Override
+    public void exit() {
+        System.out.println(this.getName() + " B kapsıından çıkış yaptı");
     }
 }

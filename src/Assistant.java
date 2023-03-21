@@ -14,8 +14,15 @@ public class Assistant extends Academician{
         this.officeTime = officeTime;
     }
     public void takeAQuiz(){
-        System.out.println(getName() + "is taking a quiz" );
+        System.out.println(getName() + "quiz yapıyor" );
 
     }
+
+    @Override
+    public void attendClass() {
+        System.out.println(this.getName() + " derse girdi, yoklama yaptı. Çıktı");
+
+    }
+
 
 }

@@ -1,4 +1,4 @@
-public class Worker {
+public abstract class Worker {
     private String name;
     private int telNumber;
     private String email;
@@ -32,16 +32,13 @@ public class Worker {
     public void setEmail(String email) {
         this.email = email;
     }
-    public void entry(){
-        System.out.println(getName() + " entered the course");
 
-    }
-    public void exit(){
-        System.out.println(getName() + " dropped out of class");
+    public abstract void entry();
 
-    }
+    public abstract void exit();
+
     public void refectory(){
-        System.out.println(getName() + " in the refectory");
+        System.out.println(getName() + " yemekhaneye gitti");
     }
 
 

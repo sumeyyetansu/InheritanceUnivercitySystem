@@ -1,4 +1,4 @@
-public class Academician extends Worker {
+public abstract class Academician extends Worker {
     private String departmant;
     private String title;
 
@@ -24,8 +24,18 @@ public class Academician extends Worker {
         this.title = title;
 
     }
-    public void attendClass(){
-        System.out.println(getName() + " is going to class");
+    public abstract void attendClass();
+
+    @Override
+    public void entry() {
+
+        System.out.println(this.getName() + " A kapısından giriş yaptı");
+    }
+
+    @Override
+    public void exit() {
+        System.out.println(this.getName() + " A kapısından çıkış yaptı");
 
     }
+
 }
